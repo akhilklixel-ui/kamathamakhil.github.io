@@ -20,11 +20,11 @@
   <section class="contact-section">
     <h2>Let’s Connect 💬</h2>
     <div class="contact-card">
-      <form>
+      <form id="contactForm">
         <h3>Contact Me</h3>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
 
@@ -40,6 +40,11 @@
       </div>
     </div>
   </section>
+
+  <!-- Popup Message -->
+  <div id="popupMessage">
+    <p>✅ Message Sent Successfully!</p>
+  </div>
 
   <footer>
     <p>© 2025 Kamathamakhil. All rights reserved.</p>
