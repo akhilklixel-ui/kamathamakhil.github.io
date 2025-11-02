@@ -5,8 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio | Kamathamakhil</title>
   <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <h1>Kamathamakhil</h1>
+  </div>
+
+  <!-- Navigation Bar -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
@@ -15,15 +22,55 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
-  <section class="portfolio">
-    <h2>My Work</h2>
-    <div class="grid">
-      <div class="card"><h3>Brand Promo Video</h3><p>Video Editing</p></div>
-      <div class="card"><h3>E-Commerce Website</h3><p>Web Design</p></div>
-      <div class="card"><h3>Logo Pack for Startups</h3><p>Graphic Design</p></div>
-      <div class="card"><h3>Instagram Growth Strategy</h3><p>Social Media Marketing</p></div>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio-section">
+    <h2>My Work 🚀</h2>
+
+    <div class="portfolio-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Video Editing Project">
+        <h3>Video Editing</h3>
+        <p>Dynamic storytelling with cinematic cuts and impactful visuals for brands and creators.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Content Creation">
+        <h3>Content Creation</h3>
+        <p>Creative short-form videos designed to build engagement and boost social growth.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=800&q=60" alt="Web Design">
+        <h3>Web Design & Development</h3>
+        <p>Minimal, responsive, and modern websites crafted to convert visitors into clients.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1581091012184-7f3c8f7dcf7a?auto=format&fit=crop&w=800&q=60" alt="Graphic Design">
+        <h3>Graphic Design</h3>
+        <p>Professional posters, branding, and social media visuals that stand out aesthetically.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card">
+        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=60" alt="Digital Marketing">
+        <h3>Digital Marketing</h3>
+        <p>Expert social media strategy and ad campaigns designed to increase engagement and reach.</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
     </div>
   </section>
+
+  <!-- Footer -->
   <footer>
     <p>© 2025 Kamathamakhil. All rights reserved.</p>
   </footer>
