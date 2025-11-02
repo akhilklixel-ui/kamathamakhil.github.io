@@ -1,57 +1,88 @@
-// ===== Loader Fade Out =====
-window.addEventListener('load', () => {
-  const loader = document.getElementById('loader');
-  if (loader) {
+// ===== Page Loader =====
+window.addEventListener("load", () => {
+  const loader = document.getElementById("loader");
+  setTimeout(() => {
+    loader.style.opacity = "0";
+    loader.style.transition = "opacity 0.6s ease";
     setTimeout(() => {
-      loader.style.opacity = '0';
-      loader.style.transition = 'opacity 0.5s ease';
-      setTimeout(() => {
-        loader.style.display = 'none';
-      }, 500);
-    }, 1500);
-  }
+      loader.style.display = "none";
+    }, 600);
+  }, 1000); // Loader stays visible for 1 second
 });
 
-// ===== Contact Form Popup =====
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('contactForm');
-  const popup = document.getElementById('popupMessage');
+// ===== Contact Form Submission =====
+const form = document.querySelector("form");
+if (form) {
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
-  if (form && popup) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
+    // Reset the form
+    form.reset();
 
-      // Show popup
-      popup.classList.add('show');
+    // Show the popup message
+    const popup = document.createElement("div");
+    popup.id = "popupMessage";
+    popup.textContent = "✅ Message Sent Successfully!";
+    document.body.appendChild(popup);
 
-      // Hide popup after 2.5 seconds
-      setTimeout(() => {
-        popup.classList.remove('show');
-      }, 2500);
+    // Trigger show animation
+    setTimeout(() => {
+      popup.classList.add("show");
+    }, 100);
 
-      // Reset form fields
-      form.reset();
-    });
-  }
-});
-
-// ===== Smooth Scroll for Navigation =====
-const navLinks = document.querySelectorAll('nav ul li a');
-navLinks.forEach(link => {
-  link.addEventListener('click', () => {
-    document.querySelector('nav ul li a.active')?.classList.remove('active');
-    link.classList.add('active');
+    // Hide popup after a few seconds
+    setTimeout(() => {
+      popup.classList.remove("show");
+      setTimeout(() => popup.remove(), 500);
+    }, 3000);
   });
-});
+}
 
-// ===== Button Hover Effects (Optional Aesthetic Touch) =====
-const buttons = document.querySelectorAll('button');
-buttons.forEach(btn => {
-  btn.addEventListener('mousemove', e => {
-    const rect = btn.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    btn.style.setProperty('--x', `${x}px`);
-    btn.style.setProperty('--y', `${y}px`);
+// ===== Portfolio Project Popup =====
+document.addEventListener("DOMContentLoaded", () => {
+  const viewButtons = document.querySelectorAll(".btn");
+  const popup = document.createElement("div");
+  popup.className = "project-popup";
+  popup.innerHTML = `
+    <div class="popup-content">
+      <span id="closePopup">&times;</span>
+      <img src="" alt="Project Image" id="popupImage" />
+      <h3 id="popupTitle"></h3>
+      <p id="popupDesc"></p>
+    </div>
+  `;
+  document.body.appendChild(popup);
+
+  const popupImg = popup.querySelector("#popupImage");
+  const popupTitle = popup.querySelector("#popupTitle");
+  const popupDesc = popup.querySelector("#popupDesc");
+  const closePopup = popup.querySelector("#closePopup");
+
+  // Handle "View Project" button clicks
+  viewButtons.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const card = btn.closest(".project-card");
+      popupImg.src = card.querySelector("img").src;
+      popupTitle.textContent = card.querySelector("h3").textContent;
+      popupDesc.textContent = card.querySelector("p").textContent;
+
+      popup.style.display = "flex";
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  // Close popup
+  closePopup.addEventListener("click", () => {
+    popup.style.display = "none";
+    document.body.style.overflow = "auto";
+  });
+
+  // Close popup when clicking outside
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+      document.body.style.overflow = "auto";
+    }
   });
 });
