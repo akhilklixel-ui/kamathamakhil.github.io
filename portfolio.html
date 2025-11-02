@@ -28,47 +28,62 @@
     <h2>My Work 🚀</h2>
 
     <div class="portfolio-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Video Editing Project">
+      <div class="project-card" data-title="Video Editing"
+           data-description="Dynamic storytelling with cinematic cuts and impactful visuals for brands and creators."
+           data-image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=60">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Video Editing">
         <h3>Video Editing</h3>
-        <p>Dynamic storytelling with cinematic cuts and impactful visuals for brands and creators.</p>
-        <a href="#" class="btn">View Project</a>
+        <p>Dynamic storytelling with cinematic visuals.</p>
+        <a href="#" class="btn open-project">View Project</a>
       </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Content Creation">
+      <div class="project-card" data-title="Content Creation"
+           data-description="Creative short-form videos designed to build engagement and boost social growth."
+           data-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=60">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Content Creation">
         <h3>Content Creation</h3>
-        <p>Creative short-form videos designed to build engagement and boost social growth.</p>
-        <a href="#" class="btn">View Project</a>
+        <p>Creative short-form social content.</p>
+        <a href="#" class="btn open-project">View Project</a>
       </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=800&q=60" alt="Web Design">
+      <div class="project-card" data-title="Web Design & Development"
+           data-description="Minimal, responsive, and modern websites crafted to convert visitors into clients."
+           data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=60">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Web Design">
         <h3>Web Design & Development</h3>
-        <p>Minimal, responsive, and modern websites crafted to convert visitors into clients.</p>
-        <a href="#" class="btn">View Project</a>
+        <p>Modern, clean, and responsive websites.</p>
+        <a href="#" class="btn open-project">View Project</a>
       </div>
 
-      <!-- Project 4 -->
-      <div class="project-card">
-        <img src="https://images.unsplash.com/photo-1581091012184-7f3c8f7dcf7a?auto=format&fit=crop&w=800&q=60" alt="Graphic Design">
+      <div class="project-card" data-title="Graphic Design"
+           data-description="Professional posters, branding, and social media visuals that stand out aesthetically."
+           data-image="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=1000&q=60">
+        <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=800&q=60" alt="Graphic Design">
         <h3>Graphic Design</h3>
-        <p>Professional posters, branding, and social media visuals that stand out aesthetically.</p>
-        <a href="#" class="btn">View Project</a>
+        <p>Posters and visuals that stand out.</p>
+        <a href="#" class="btn open-project">View Project</a>
       </div>
 
-      <!-- Project 5 -->
-      <div class="project-card">
+      <div class="project-card" data-title="Digital Marketing"
+           data-description="Expert social media strategy and ad campaigns designed to increase engagement and reach."
+           data-image="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1000&q=60">
         <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=60" alt="Digital Marketing">
         <h3>Digital Marketing</h3>
-        <p>Expert social media strategy and ad campaigns designed to increase engagement and reach.</p>
-        <a href="#" class="btn">View Project</a>
+        <p>Social strategies that drive results.</p>
+        <a href="#" class="btn open-project">View Project</a>
       </div>
     </div>
   </section>
+
+  <!-- Project Popup Modal -->
+  <div class="project-popup" id="projectPopup">
+    <div class="popup-content">
+      <span id="closePopup">&times;</span>
+      <img id="popupImage" src="" alt="Project Image">
+      <h3 id="popupTitle"></h3>
+      <p id="popupDescription"></p>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer>
