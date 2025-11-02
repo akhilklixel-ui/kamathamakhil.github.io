@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kamathamakhil | Home</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kamathamakhil | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
+  <!-- Loader -->
   <div id="loader">
     <h1>Kamathamakhil</h1>
   </div>
+
+  <!-- Navigation -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
-      <li><a href="index.html">Home</a></li>
+      <li><a href="index.html" class="active">Home</a></li>
       <li><a href="portfolio.html">Portfolio</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
+
+  <!-- Hero Section -->
   <section class="hero">
-    <div class="image-slot"></div>
-    <h1>Hey, I'm <span>Kamathamakhil</span> 👋</h1>
-    <p>I’m a Video Editor, Content Creator, Web Designer & Digital Marketer.</p>
-    <a href="portfolio.html" class="btn">View My Work</a>
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Kamathamakhil</span> 👋</h1>
+      <p>
+        A passionate <strong>Video Editor</strong>, <strong>Content Creator</strong>, 
+        <strong>Web Designer</strong>, and <strong>Graphic Designer</strong> — 
+        helping brands and creators grow with stunning visuals, digital marketing, 
+        and creative storytelling.
+      </p>
+      <button onclick="window.location.href='portfolio.html'">View My Work</button>
+      <button style="margin-left: 10px;" onclick="window.location.href='contact.html'">
+        Contact Me
+      </button>
+    </div>
+
+    <div class="hero-img">
+      <!-- Upload your image below -->
+      <img src="your-photo.jpg" alt="Kamathamakhil" style="border-radius: 20px; width: 320px; height: auto;" />
+    </div>
   </section>
+
+  <!-- About Section -->
+  <section class="portfolio-section">
+    <h2>What I Do 💡</h2>
+    <div class="portfolio-grid">
+      <div class="project-card">
+        <h3>🎬 Video Editing</h3>
+        <p>Transforming raw clips into cinematic stories with impactful pacing and effects.</p>
+      </div>
+      <div class="project-card">
+        <h3>🧠 Content Creation</h3>
+        <p>Crafting engaging content that boosts reach and builds lasting audience trust.</p>
+      </div>
+      <div class="project-card">
+        <h3>💻 Web Design & Development</h3>
+        <p>Designing sleek, modern websites that connect with users and drive conversions.</p>
+      </div>
+      <div class="project-card">
+        <h3>🎨 Graphic Design</h3>
+        <p>Creating professional posters, branding visuals, and ad creatives that stand out.</p>
+      </div>
+      <div class="project-card">
+        <h3>📈 Digital Marketing</h3>
+        <p>Helping brands grow with strategy-driven social media and ad campaigns.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Kamathamakhil. All rights reserved.</p>
+    <p>© 2025 Kamathamakhil. Designed with 💜 by Kamathamakhil.</p>
   </footer>
 </body>
 </html>
