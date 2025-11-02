@@ -147,6 +147,7 @@ nav ul li a.active {
   border-radius: 15px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
 }
 
 .project-card:hover {
@@ -158,11 +159,35 @@ nav ul li a.active {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
 }
 
 .project-card h3 {
   color: #9b87f5;
   margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  background: #9b87f5;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #836ef7;
 }
 
 /* ===== Contact Section ===== */
@@ -298,6 +323,79 @@ button:hover {
   bottom: 50px;
 }
 
+/* ===== Project Popup Modal ===== */
+.project-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 17, 22, 0.95);
+  backdrop-filter: blur(10px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(155, 135, 245, 0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+  animation: fadeUp 0.4s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.popup-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.5s ease;
+}
+
+.popup-content img:hover {
+  transform: scale(1.03);
+}
+
+.popup-content h3 {
+  color: #9b87f5;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+#closePopup {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  color: #9b87f5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#closePopup:hover {
+  color: #fff;
+}
+
 /* ===== Footer ===== */
 footer {
   text-align: center;
@@ -325,8 +423,14 @@ footer p {
     align-items: center;
   }
 
-  form, .contact-info {
+  form,
+  .contact-info {
     width: 100%;
     max-width: 400px;
+  }
+
+  .popup-content {
+    width: 90%;
+    padding: 20px;
   }
 }
