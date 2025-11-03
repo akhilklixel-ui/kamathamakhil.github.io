@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kamathamakhil</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id='loader'><h1>Kamathamakhil</h1></div>
+  <nav>
+    <h2>Kamathamakhil</h2>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact">
+    <div class="contact-container">
+      <h2>Contact Me 📬</h2>
+      <p>Have a project or collab? Drop a message — I reply quickly.</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" id="contactForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required placeholder="Tell me about your project..." rows="6"></textarea>
+        </div>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer><p>© 2025 Kamathamakhil</p></footer>
+</body>
+</html>
