@@ -1,12 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Kamathamakhil</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Loader -->
+  <div id="loader">
+    <h1>Loading Portfolio...</h1>
+  </div>
+
+  <!-- Navbar -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
@@ -16,55 +22,69 @@
     </ul>
   </nav>
 
+  <!-- Portfolio Section -->
   <section class="portfolio-section">
-    <h2>My Work 🚀</h2>
-    <p class="portfolio-subtext">A glimpse into what I do best — creating visuals that move, inspire, and sell.</p>
+    <h2>My Portfolio</h2>
+    <p class="portfolio-subtext">
+      A curated selection of my favorite works in video editing, design, and digital marketing.
+    </p>
 
     <div class="portfolio-grid">
       <!-- Card 1 -->
       <div class="portfolio-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2991/2991148.png" alt="Video Editing">
+        <img src="assets/video-editing.png" alt="Video Editing" />
         <h3>Video Editing</h3>
-        <p>Dynamic storytelling with cinematic visuals and smooth transitions.</p>
-        <a href="YOUR_PDF_LINK_1.pdf" target="_blank" class="btn">View Project</a>
+        <p>Dynamic and cinematic edits that bring stories to life for brands and creators.</p>
+        <a href="#" class="btn">View Work</a>
       </div>
 
       <!-- Card 2 -->
       <div class="portfolio-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2784/2784445.png" alt="Content Creation">
+        <img src="assets/content-creation.png" alt="Content Creation" />
         <h3>Content Creation</h3>
-        <p>Creative short-form content that engages audiences on all social platforms.</p>
-        <a href="YOUR_PDF_LINK_2.pdf" target="_blank" class="btn">View Project</a>
+        <p>Short-form & long-form digital content designed for social media growth.</p>
+        <a href="#" class="btn">View Work</a>
       </div>
 
       <!-- Card 3 -->
       <div class="portfolio-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920340.png" alt="Web Design">
+        <img src="assets/web-design.png" alt="Web Design" />
         <h3>Web Design & Development</h3>
-        <p>Modern, responsive, and clean websites that elevate your digital presence.</p>
-        <a href="YOUR_PDF_LINK_3.pdf" target="_blank" class="btn">View Project</a>
+        <p>Modern, responsive websites with strong brand identity and seamless UX.</p>
+        <a href="#" class="btn">View Work</a>
       </div>
 
       <!-- Card 4 -->
       <div class="portfolio-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Graphic Design">
+        <img src="assets/graphic-design.png" alt="Graphic Design" />
         <h3>Graphic Design</h3>
-        <p>Eye-catching posters, visuals, and brand designs that make an impression.</p>
-        <a href="YOUR_PDF_LINK_4.pdf" target="_blank" class="btn">View Project</a>
+        <p>Eye-catching posters, branding visuals, and motion designs that speak.</p>
+        <a href="#" class="btn">View Work</a>
       </div>
 
       <!-- Card 5 -->
       <div class="portfolio-card">
-        <img src="https://cdn-icons-png.flaticon.com/512/2645/2645897.png" alt="Digital Marketing">
+        <img src="assets/marketing.png" alt="Digital Marketing" />
         <h3>Digital Marketing</h3>
-        <p>Strategic campaigns that build brand authority and drive measurable growth.</p>
-        <a href="YOUR_PDF_LINK_5.pdf" target="_blank" class="btn">View Project</a>
+        <p>Strategies that increase engagement, build brand authority, and drive sales.</p>
+        <a href="#" class="btn">View Work</a>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="portfolio-card">
+        <img src="assets/social-media.png" alt="Social Media Management" />
+        <h3>Social Media Management</h3>
+        <p>Full management and creative direction for Instagram, YouTube, and beyond.</p>
+        <a href="#" class="btn">View Work</a>
       </div>
     </div>
   </section>
 
+  <!-- Footer -->
   <footer>
-    © 2025 Kamathamakhil. All rights reserved.
+    <p>© 2025 Kamathamakhil. All rights reserved.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
