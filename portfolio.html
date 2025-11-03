@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Kamathamakhil</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
 </head>
 <body>
@@ -13,7 +13,7 @@
     <h1>Kamathamakhil</h1>
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
@@ -26,64 +26,50 @@
   <!-- Portfolio Section -->
   <section class="portfolio-section">
     <h2>My Work 🚀</h2>
+    <p class="portfolio-subtext">A glimpse into what I do best — creating visuals that move, inspire, and sell.</p>
 
     <div class="portfolio-grid">
-      <div class="project-card" data-title="Video Editing"
-           data-description="Dynamic storytelling with cinematic cuts and impactful visuals for brands and creators."
-           data-image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1000&q=60">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=60" alt="Video Editing">
+      <!-- Video Editing -->
+      <div class="portfolio-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1046/1046784.png" alt="Video Editing" />
         <h3>Video Editing</h3>
-        <p>Dynamic storytelling with cinematic visuals.</p>
-        <a href="#" class="btn open-project">View Project</a>
+        <p>Dynamic storytelling with cinematic visuals and smooth transitions.</p>
+        <a href="links/video-editing.pdf" class="btn" target="_blank">View Project</a>
       </div>
 
-      <div class="project-card" data-title="Content Creation"
-           data-description="Creative short-form videos designed to build engagement and boost social growth."
-           data-image="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1000&q=60">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=60" alt="Content Creation">
+      <!-- Content Creation -->
+      <div class="portfolio-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1039/1039383.png" alt="Content Creation" />
         <h3>Content Creation</h3>
-        <p>Creative short-form social content.</p>
-        <a href="#" class="btn open-project">View Project</a>
+        <p>Creative short-form content that engages audiences on all social platforms.</p>
+        <a href="links/content-creation.pdf" class="btn" target="_blank">View Project</a>
       </div>
 
-      <div class="project-card" data-title="Web Design & Development"
-           data-description="Minimal, responsive, and modern websites crafted to convert visitors into clients."
-           data-image="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1000&q=60">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=60" alt="Web Design">
+      <!-- Web Design -->
+      <div class="portfolio-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920277.png" alt="Web Design" />
         <h3>Web Design & Development</h3>
-        <p>Modern, clean, and responsive websites.</p>
-        <a href="#" class="btn open-project">View Project</a>
+        <p>Modern, responsive, and clean websites that elevate your digital presence.</p>
+        <a href="links/web-design.pdf" class="btn" target="_blank">View Project</a>
       </div>
 
-      <div class="project-card" data-title="Graphic Design"
-           data-description="Professional posters, branding, and social media visuals that stand out aesthetically."
-           data-image="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=1000&q=60">
-        <img src="https://images.unsplash.com/photo-1501556424050-d4816356b73e?auto=format&fit=crop&w=800&q=60" alt="Graphic Design">
+      <!-- Graphic Design -->
+      <div class="portfolio-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/3037/3037212.png" alt="Graphic Design" />
         <h3>Graphic Design</h3>
-        <p>Posters and visuals that stand out.</p>
-        <a href="#" class="btn open-project">View Project</a>
+        <p>Eye-catching posters, visuals, and brand designs that make an impression.</p>
+        <a href="links/graphic-design.pdf" class="btn" target="_blank">View Project</a>
       </div>
 
-      <div class="project-card" data-title="Digital Marketing"
-           data-description="Expert social media strategy and ad campaigns designed to increase engagement and reach."
-           data-image="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=1000&q=60">
-        <img src="https://images.unsplash.com/photo-1559028012-481c04fa702d?auto=format&fit=crop&w=800&q=60" alt="Digital Marketing">
+      <!-- Digital Marketing -->
+      <div class="portfolio-card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2942/2942073.png" alt="Digital Marketing" />
         <h3>Digital Marketing</h3>
-        <p>Social strategies that drive results.</p>
-        <a href="#" class="btn open-project">View Project</a>
+        <p>Strategic campaigns that build brand authority and drive measurable growth.</p>
+        <a href="links/digital-marketing.pdf" class="btn" target="_blank">View Project</a>
       </div>
     </div>
   </section>
-
-  <!-- Project Popup Modal -->
-  <div class="project-popup" id="projectPopup">
-    <div class="popup-content">
-      <span id="closePopup">&times;</span>
-      <img id="popupImage" src="" alt="Project Image">
-      <h3 id="popupTitle"></h3>
-      <p id="popupDescription"></p>
-    </div>
-  </div>
 
   <!-- Footer -->
   <footer>
