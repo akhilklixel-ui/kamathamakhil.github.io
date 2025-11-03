@@ -4,32 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Kamathamakhil</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <script>
-    // Show "Message Sent" popup after redirect
-    if (window.location.search.includes("success=true")) {
-      window.addEventListener("DOMContentLoaded", () => {
-        const popup = document.createElement("div");
-        popup.id = "popupMessage";
-        popup.textContent = "✅ Message Sent Successfully!";
-        document.body.appendChild(popup);
-        setTimeout(() => popup.classList.add("show"), 100);
-        setTimeout(() => {
-          popup.classList.remove("show");
-          setTimeout(() => popup.remove(), 500);
-        }, 3000);
-      });
-    }
-  </script>
 </head>
 <body>
-  <!-- Loader -->
+  <!-- ======= Loader ======= -->
   <div id="loader">
     <h1>Kamathamakhil</h1>
   </div>
 
-  <!-- Navigation -->
+  <!-- ======= Navbar ======= -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
@@ -39,48 +23,41 @@
     </ul>
   </nav>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <h2>Let’s Work Together 🤝</h2>
+  <!-- ======= Contact Section ======= -->
+  <section class="contact">
+    <div class="contact-container">
+      <h2>Contact Me 📬</h2>
+      <p>
+        Have a project in mind, want to collaborate, or just say hello?  
+        Fill out the form below — I’d love to hear from you!
+      </p>
 
-    <div class="contact-card">
-      <!-- Contact Form -->
       <form 
-        action="https://formspree.io/f/mldoynog"
-        method="POST"
-        onsubmit="setTimeout(() => { window.location='contact.html?success=true'; }, 100);"
+        action="https://formspree.io/f/mldoynog" 
+        method="POST" 
+        class="contact-form"
       >
-        <!-- You’ll link this form to akhilklixel@gmail.com in Formspree -->
-        <h3>Send Me a Message</h3>
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-
-      <!-- Contact Info -->
-      <div class="contact-info">
-        <h4>Connect With Me</h4>
-        <p><strong>Email:</strong> <a href="mailto:akhilklixel@gmail.com">akhilklixel@gmail.com</a></p>
-        <p><strong>Location:</strong> India,Telengana</p>
-        <p><strong>Number:</strong> 6302431662</p>
-        <p><strong>Socials:</strong></p>
-        <div class="socials">
-          <a href="https://www.instagram.com/kamathamakhil/" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
-          </a>
-          <a href="https://youtube.com/@graphifire?si=V104vYY7wgamedYE" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
-          </a>
-          <a href="https://www.linkedin.com/in/kamatham-akhil-a6854132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384072.png" alt="LinkedIn" />
-          </a>
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" name="name" id="name" required placeholder="Enter your name" />
         </div>
-      </div>
+
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" name="email" id="email" required placeholder="Enter your email" />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea name="message" id="message" rows="6" required placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
     </div>
   </section>
 
-  <!-- Footer -->
+  <!-- ======= Footer ======= -->
   <footer>
     <p>© 2025 Kamathamakhil. All rights reserved.</p>
   </footer>
