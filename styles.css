@@ -2,7 +2,7 @@
    Kamathamakhil Portfolio Website
    =============================== */
 
-/* Global Reset */
+/* ---------- Global Reset ---------- */
 * {
   margin: 0;
   padding: 0;
@@ -16,9 +16,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ===============================
-   Loader
-   =============================== */
+/* ---------- Loader ---------- */
 #loader {
   position: fixed;
   top: 0;
@@ -50,9 +48,7 @@ body {
   to { opacity: 0; visibility: hidden; }
 }
 
-/* ===============================
-   Navbar
-   =============================== */
+/* ---------- Navbar ---------- */
 nav {
   display: flex;
   justify-content: space-between;
@@ -90,9 +86,7 @@ nav ul li a.active {
   color: #b48ef5;
 }
 
-/* ===============================
-   Hero / Home Section
-   =============================== */
+/* ---------- Hero / Home ---------- */
 .hero {
   height: 85vh;
   display: flex;
@@ -135,9 +129,7 @@ nav ul li a.active {
   transform: scale(1.05);
 }
 
-/* ===============================
-   Portfolio Page (Fixed)
-   =============================== */
+/* ---------- Portfolio Section ---------- */
 .portfolio-section {
   text-align: center;
   padding: 80px 20px;
@@ -220,10 +212,7 @@ nav ul li a.active {
   transform: scale(1.05);
 }
 
-
-/* ===============================
-   Contact Page
-   =============================== */
+/* ---------- Contact Page ---------- */
 .contact-container {
   min-height: 90vh;
   display: flex;
@@ -298,9 +287,7 @@ button:hover {
   transform: scale(1.05);
 }
 
-/* ===============================
-   Footer
-   =============================== */
+/* ---------- Footer ---------- */
 footer {
   text-align: center;
   padding: 20px;
@@ -308,4 +295,24 @@ footer {
   font-size: 0.9rem;
   background: rgba(255, 255, 255, 0.02);
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 768px) {
+  nav {
+    padding: 20px 5%;
+  }
+
+  nav ul {
+    gap: 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .portfolio-card img {
+    width: 100px;
+    height: 100px;
+  }
 }
