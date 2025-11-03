@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Kamathamakhil</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+  <script>
+    // Show "Message Sent" popup after redirect
+    if (window.location.search.includes("success=true")) {
+      window.addEventListener("DOMContentLoaded", () => {
+        const popup = document.createElement("div");
+        popup.id = "popupMessage";
+        popup.textContent = "✅ Message Sent Successfully!";
+        document.body.appendChild(popup);
+        setTimeout(() => popup.classList.add("show"), 100);
+        setTimeout(() => {
+          popup.classList.remove("show");
+          setTimeout(() => popup.remove(), 500);
+        }, 3000);
+      });
+    }
+  </script>
 </head>
 <body>
   <!-- Loader -->
@@ -13,7 +29,7 @@
     <h1>Kamathamakhil</h1>
   </div>
 
-  <!-- Navigation Bar -->
+  <!-- Navigation -->
   <nav>
     <h2>Kamathamakhil</h2>
     <ul>
@@ -25,38 +41,43 @@
 
   <!-- Contact Section -->
   <section class="contact-section">
-    <h2>Let’s Connect 💬</h2>
+    <h2>Let’s Work Together 🤝</h2>
 
     <div class="contact-card">
       <!-- Contact Form -->
-      <form id="contactForm">
-        <h3>Contact Me</h3>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+      <form 
+        action="https://formspree.io/f/mldoynog" 
+        method="POST"
+        onsubmit="setTimeout(() => { window.location='contact.html?success=true'; }, 100);"
+      >
+        <!-- You’ll link this form to akhilklixel@gmail.com in Formspree -->
+        <h3>Send Me a Message</h3>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
         <button type="submit">Send Message</button>
       </form>
 
       <!-- Contact Info -->
       <div class="contact-info">
-        <h4>Reach Me At</h4>
-        <p>📧 <a href="mailto:akhilklixel@gmail.com">akhilklixel@gmail.com</a></p>
-        <p>📞 Call to : 6302431662</p>
-        <p>📍 Hyderabad, India</p>
-
+        <h4>Connect With Me</h4>
+        <p><strong>Email:</strong> <a href="mailto:akhilklixel@gmail.com">akhilklixel@gmail.com</a></p>
+        <p><strong>Location:</strong> India 🇮🇳</p>
+        <p><strong>Socials:</strong></p>
         <div class="socials">
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
-          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+          <a href="https://instagram.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" alt="Instagram" />
+          </a>
+          <a href="https://youtube.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" />
+          </a>
+          <a href="https://linkedin.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/1384/1384072.png" alt="LinkedIn" />
+          </a>
         </div>
       </div>
     </div>
   </section>
-
-  <!-- Popup Message -->
-  <div id="popupMessage">
-    <p>✅ Message Sent Successfully!</p>
-  </div>
 
   <!-- Footer -->
   <footer>
