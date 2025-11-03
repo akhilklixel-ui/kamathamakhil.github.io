@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Kamathamakhil — Home</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+</head>
+<body>
+<!-- Splash (shows 0.5s every load/navigation) -->
+<div id="splash" class="splash-screen"><h1>Kamathamakhil</h1></div>
+
+<nav class="nav">
+  <h2 class="logo">Kamathamakhil</h2>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<main>
+  <header class="hero">
+    <div class="hero-left">
+      <h1>Hi, I'm <span>Kamathamakhil</span></h1>
+      <p class="lead">Video Editor • Content Creator • Web Designer • Graphic Designer • Digital Marketer</p>
+      <div class="cta-row">
+        <a class="btn primary" href="portfolio.html">View My Work</a>
+        <a class="btn ghost" href="contact.html">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="portrait-wrap"><img src="assets/akhil.png" alt="Akhil" class="portrait"></div>
+    </div>
+
+    <!-- abstract vector shapes background (decorative) -->
+    <svg class="bg-shapes" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs><linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#9b87f5"/><stop offset="1" stop-color="#6ec1ff"/></linearGradient></defs>
+      <circle cx="10%" cy="20%" r="180" fill="url(#g1)" opacity="0.06"></circle>
+      <rect x="70%" y="-10%" width="520" height="520" rx="80" fill="#6ec1ff" opacity="0.04" transform="rotate(25)"></rect>
+      <ellipse cx="85%" cy="80%" rx="360" ry="120" fill="#9b87f5" opacity="0.03"></ellipse>
+    </svg>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I craft visuals and strategies that convert — from cinematic edits and short-form content to responsive websites and brand design.</p>
+    <div class="about-grid">
+      <div class="card"><h3>Video Editing</h3><p>Cinematic storytelling, color grading and pacing.</p></div>
+      <div class="card"><h3>Graphic Design</h3><p>Brand assets, thumbnails and motion graphics.</p></div>
+      <div class="card"><h3>Web Dev</h3><p>Responsive sites, landing pages and UI/UX.</p></div>
+      <div class="card"><h3>Marketing</h3><p>Content strategies and ad optimization.</p></div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-card">
+      <h2>Let’s build something together</h2>
+      <p>Ready to start? I help brands tell stories that convert.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="contact.html">Get in Touch</a>
+        <a class="btn ghost" href="portfolio.html">See My Work</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer"><p>© 2025 Kamathamakhil</p></footer>
+
+<!-- scroll to top button -->
+<button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+</body>
+</html>
