@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kamathamakhil</title>
+  <link rel="icon" href="assets/favicon.png" />
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div id="splash" class="splash-screen"><h1>Kamathamakhil</h1></div>
+  <div id="progress" class="progress-bar"></div>
+
+  <nav class="nav">
+    <h2 class="logo">Kamathamakhil</h2>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="contact" id="contact">
+      <div class="glass-card">
+        <div class="glass-left">
+          <h2>Get in touch</h2>
+          <p>Have a project or collab? Send a message or reach me directly.</p>
+          <div class="info">
+            <p><strong>Email:</strong> <a href="mailto:akhilklixel@gmail.com">akhilklixel@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+916302431662">+91 63024 31662</a></p>
+            <div class="socials">
+              <a class="social" href="https://www.instagram.com/kamathamakhil/" target="_blank">Instagram</a>
+              <a class="social" href="https://www.youtube.com/@graphifire" target="_blank">YouTube</a>
+              <a class="social" href="https://www.linkedin.com/in/kamatham-akhil-a6854132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass-right">
+          <form id="contactForm" action="https://formspree.io/f/mldoynog" method="POST">
+            <div class="form-group"><label for="name">Name</label><input id="name" name="name" required></div>
+            <div class="form-group"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+            <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+</body>
+</html>
